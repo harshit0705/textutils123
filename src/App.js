@@ -53,13 +53,17 @@ function App() {
   <Navbar title="TextUtils"  mode={mode} toogle={toogle}/>
   
   <Alert  alert={alert}/>
+  
+  
+
          
          <Routes>
+         <Route   path="/" element={ <div className="container">
+          <Textarea  mode={mode} showalert={showalert}/> </div>}> </Route>
           <Route exact path="/about" element={<About />}> </Route>
          
-          <Route  exact path="/" element={ <div className="container">
-          <Textarea  mode={mode} showalert={showalert}/>
-          </div>}> </Route>
+         
+         
            
          
           </Routes>
